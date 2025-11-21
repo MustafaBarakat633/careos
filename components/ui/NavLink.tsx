@@ -15,7 +15,7 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={`text-center bg-primary hover:bg-primary-hover text-white rounded-md px-7 py-1.5 cursor-pointer text-sm duration-200 border-2 border-primary ${className}`}
+      className={`inline-block text-center bg-primary hover:bg-primary-hover text-white rounded-md px-7 py-1.5 cursor-pointer text-sm duration-200 border-2 border-primary ${className}`}
     >
       {children}
     </Link>

@@ -65,7 +65,7 @@ export default function Header() {
           </AnimatePresence>
 
           <div className="flex items-center gap-4">
-            <NavLink className="max-[400px]:hidden">Order Now</NavLink>
+            <NavLink className="max-[600px]:hidden">Order Now</NavLink>
             <button
               onClick={handleOpenMobileNav}
               className={`hover:text-primary cursor-pointer text-gray-600 duration-200 md:hidden`}

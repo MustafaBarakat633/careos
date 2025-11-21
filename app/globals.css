@@ -29,3 +29,11 @@
 body {
   background-color: #eee;
 }
+
+.slick-slide > div {
+  padding: 0 10px !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}

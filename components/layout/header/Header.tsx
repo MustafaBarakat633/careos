@@ -5,7 +5,7 @@ import { useState } from "react";
 import Logo from "../Logo";
 import HeaderNavLink from "./HeaderNavLink";
 import MobileNav from "./MobileNav";
-import Button from "@/components/ui/Button";
+import NavLink from "@/components/ui/NavLink";
 
 import { AnimatePresence } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -65,7 +65,7 @@ export default function Header() {
           </AnimatePresence>
 
           <div className="flex items-center gap-4">
-            <Button className="max-[400px]:hidden">Order Now</Button>
+            <NavLink className="max-[400px]:hidden">Order Now</NavLink>
             <button
               onClick={handleOpenMobileNav}
               className={`hover:text-primary cursor-pointer text-gray-600 duration-200 md:hidden`}

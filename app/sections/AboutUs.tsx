@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import NavLink from "@/components/ui/NavLink";
 import Image from "next/image";
 export default function AboutUs() {
   return (
@@ -28,7 +28,7 @@ export default function AboutUs() {
             Diam praesent mi blandit uices vel amet. Sapien, ac tortor vel ut
             pharetra, celerisqd. sklois kias rabs raffead book.
           </p>
-          <Button className="text-lg">Read More</Button>
+          <NavLink className="text-lg">Read More</NavLink>
         </div>
       </div>
     </section>

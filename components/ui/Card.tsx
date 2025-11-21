@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./Button";
+import NavLink from "./NavLink";
 
 type CardProps = {
   card: {
@@ -21,7 +21,7 @@ export default function Card({ card }: CardProps) {
           <h3 className="font-bold mb-3">{card.title}</h3>
           <p>{card.description}</p>
         </div>
-        <Button className="py-2.5">Learn more</Button>
+        <NavLink className="py-2.5">Learn more</NavLink>
       </div>
     </div>
   );

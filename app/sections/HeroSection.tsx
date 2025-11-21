@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import NavLink from "@/components/ui/NavLink";
 
 export default function HeroSection() {
   return (
@@ -17,8 +17,8 @@ export default function HeroSection() {
           </p>
         </div>
         <nav className="flex gap-x-8 gap-y-4 flex-wrap *:text-lg">
-          <Button>Explore More</Button>
-          <Button className="bg-transparent">See Cars</Button>
+          <NavLink>Explore More</NavLink>
+          <NavLink className="bg-transparent">See Cars</NavLink>
         </nav>
       </div>
     </section>

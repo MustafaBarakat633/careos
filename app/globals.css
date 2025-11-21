@@ -37,3 +37,8 @@ body {
 .slick-arrow {
   display: none !important;
 }
+
+img {
+  width: auto;
+  height: auto;
+}

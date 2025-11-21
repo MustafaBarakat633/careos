@@ -6,7 +6,7 @@ import { RemoveScroll } from "react-remove-scroll";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import Button from "@/components/ui/Button";
+import NavLink from "@/components/ui/NavLink";
 
 export default function MobileNav({ links, onClose }) {
   const pathname = usePathname();
@@ -43,7 +43,7 @@ export default function MobileNav({ links, onClose }) {
         </div>
 
         <div className="m-4">
-          <Button className="w-full">Order Now</Button>
+          <NavLink className="w-full">Order Now</NavLink>
         </div>
 
         <nav>

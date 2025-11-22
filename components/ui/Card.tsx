@@ -11,9 +11,17 @@ type CardProps = {
 
 export default function Card({ card }: CardProps) {
   return (
-    <div key={card.title} className="bg-gray-100 overflow-hidden flex flex-col">
-      <div className="relative w-full aspect-4/3">
-        <Image src={card.image} alt="car" fill className="object-cover" />
+    <div
+      key={card.title}
+      className="bg-gray-100 overflow-hidden flex flex-col group"
+    >
+      <div className="relative w-full aspect-4/3 overflow-hidden">
+        <Image
+          src={card.image}
+          alt="car"
+          fill
+          className="object-cover group-hover:scale-105 duration-200"
+        />
       </div>
 
       <div className="p-5 grow flex flex-col items-start justify-between gap-5">

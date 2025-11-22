@@ -4,12 +4,12 @@ export default function AboutUs() {
   return (
     <section className="bg-white py-24">
       <div className="container grid lg:grid-cols-2 gap-x-10 gap-y-12 items-center">
-        <div className="relative w-full aspect-4/3">
+        <div className="relative w-full aspect-4/3 group overflow-hidden">
           <Image
             src="/images/cars/car-1.png"
             alt="car"
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 duration-200"
           />
         </div>
         <div>

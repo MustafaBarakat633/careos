@@ -39,6 +39,17 @@ const sections = [
   },
 ];
 
+const cars = [
+  {
+    id: 1,
+    image: "/images/cars/car-6.png",
+  },
+  {
+    id: 2,
+    image: "/images/cars/car-7.png",
+  },
+];
+
 export default function Gallery() {
   return (
     <section className="bg-white py-24">
@@ -55,12 +66,12 @@ export default function Gallery() {
               key={section.id}
               className="grid md:grid-cols-2 items-center gap-8 bg-gray-100 p-4 group"
             >
-              <div className="relative w-full aspect-4/3 md:group-even:order-2">
+              <div className="relative w-full aspect-4/3 md:group-even:order-2 overflow-hidden">
                 <Image
                   src={section.image}
                   alt="car"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 duration-200"
                 />
               </div>
 
@@ -76,22 +87,19 @@ export default function Gallery() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-5 bg-gray-100 p-5">
-          <div className="relative w-full aspect-4/3">
-            <Image
-              src="/images/cars/car-6.png"
-              alt="car"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative w-full aspect-4/3">
-            <Image
-              src="/images/cars/car-7.png"
-              alt="car"
-              fill
-              className="object-cover"
-            />
-          </div>
+          {cars.map((car) => (
+            <div
+              key={car.id}
+              className="relative w-full aspect-4/3 group overflow-hidden"
+            >
+              <Image
+                src={car.image}
+                alt="car"
+                fill
+                className="object-cover group-hover:scale-105 duration-200"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

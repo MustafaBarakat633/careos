@@ -8,6 +8,6 @@ Cars selling website
 - **React 19**
 - **Tailwind CSS**
 - **Framer Motion**
-- **React Slick / Slick Carousel**
+- **Swiper.js**
 - **React Icons**
 - **React Remove Scroll**

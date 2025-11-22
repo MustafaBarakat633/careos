@@ -59,8 +59,8 @@ export default function Footer() {
   return (
     <footer className="text-white bg-footer-bg py-16">
       <div className="container">
-        <div className=" grid grid-cols-1 sm:grid-cols-3 mg:grid-col-5 lg:grid-cols-7 gap-6">
-          <div className="md:col-span-2 lg:col-span-3">
+        <div className=" grid grid-cols-1 sm:grid-cols-3 mg:grid-col-5 lg:grid-cols-6 gap-6">
+          <div className="lg:col-span-2 ">
             <Logo light />
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
             </div>
           ))}
 
-          <div className="flex flex-col gap-3 items-start *:w-[120px]">
+          <div className="flex flex-col gap-3 items-start *:w-[120px] self-center">
             <NavLink>Register</NavLink>
             <NavLink className="bg-white text-primary! hover:text-white!">
               Log in
@@ -99,9 +99,13 @@ export default function Footer() {
             <p>Follow us:</p>
             <div className="flex gap-4 flex-wrap">
               {socialMediaLinks.map((link, i) => (
-                <NavLink key={i} className="p-3! rounded-full!">
+                <a
+                  key={i}
+                  href={link.href}
+                  className="inline-block text-center bg-primary hover:bg-primary-hover text-white rounded-full p-3 cursor-pointer text-sm duration-200"
+                >
                   {link.icon}
-                </NavLink>
+                </a>
               ))}
             </div>
           </div>

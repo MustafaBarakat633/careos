@@ -2,7 +2,7 @@ import NavLink from "@/components/ui/NavLink";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[url(/images/hero-section-img.png)] min-h-[90vh] bg-cover text-white flex items-center">
+    <section className="bg-[url(/images/hero-section-img.png)] bg-center min-h-[90vh] bg-cover text-white flex items-center">
       <div className="container flex flex-col gap-10 py-16">
         <h1 className="uppercase font-bold text-[35px] md:text-5xl lg:text-7xl">
           Purchase your <br /> <span className="text-primary">perfect</span> car

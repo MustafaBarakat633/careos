@@ -7,7 +7,7 @@
 }
 
 @utility empty-page {
-  @apply py-24 text-center text-4xl text-primary font-bold;
+  @apply py-24 text-4xl text-primary font-bold min-h-[91vh] flex items-center justify-center;
 }
 
 @theme {

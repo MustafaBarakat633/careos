@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function HeaderNavLink({ link, className = "" }) {
+type HeaderNavLinkProps = {
+  link: {
+    text: string;
+    href: string;
+  };
+  className?: string;
+};
+
+export default function HeaderNavLink({ link, className }: HeaderNavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === link.href;
 

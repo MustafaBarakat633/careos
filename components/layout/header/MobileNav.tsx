@@ -8,7 +8,15 @@ import { usePathname } from "next/navigation";
 
 import NavLink from "@/components/ui/NavLink";
 
-export default function MobileNav({ links, onClose }) {
+type MobileNavProps = {
+  links: {
+    text: string;
+    href: string;
+  }[];
+  onClose: () => void;
+};
+
+export default function MobileNav({ links, onClose }: MobileNavProps) {
   const pathname = usePathname();
 
   return (

@@ -9,6 +9,7 @@ Cars selling website landing page project, built as part of the DRB internship p
 ## Technologies Used:
 
 - **Next.js**
+- **TypeScript**
 - **Tailwind CSS**
 - **Framer Motion**
 - **Swiper.js**

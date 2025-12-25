@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 type HeaderNavLinkProps = {
   link: {
@@ -10,19 +9,18 @@ type HeaderNavLinkProps = {
 };
 
 export default function HeaderNavLink({ link, className }: HeaderNavLinkProps) {
-  const pathname = usePathname();
-  const isActive = pathname === link.href;
+  // const pathname = usePathname();
+  // const isActive = pathname === link.href;
+  // className={`${isActive ? "text-primary" : ""}`}
 
   return (
     <li>
-      <Link
+      <a
         href={link.href}
-        className={`text-black hover:text-primary inline-block duration-200 ${
-          isActive ? "text-primary" : ""
-        } ${className}`}
+        className={`text-black hover:text-primary inline-block duration-200 ${className}`}
       >
         {link.text}
-      </Link>
+      </a>
     </li>
   );
 }

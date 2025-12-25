@@ -14,19 +14,19 @@ import { useDebouncedResize } from "@/hooks/useDebouncedResize";
 const links = [
   {
     text: "Home",
-    href: "/",
+    href: "#",
   },
   {
     text: "About Us",
-    href: "/about-us",
+    href: "#about-us",
   },
   {
     text: "Cars",
-    href: "/cars",
+    href: "#cars",
   },
   {
     text: "Services",
-    href: "/services",
+    href: "#services",
   },
 ];
 

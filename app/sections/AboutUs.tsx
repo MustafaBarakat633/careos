@@ -2,7 +2,7 @@ import NavLink from "@/components/ui/NavLink";
 import Image from "next/image";
 export default function AboutUs() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24" id="about-us">
       <div className="container grid lg:grid-cols-2 gap-x-10 gap-y-12 items-center">
         <div className="relative w-full aspect-4/3 group overflow-hidden">
           <Image

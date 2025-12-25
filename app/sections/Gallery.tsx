@@ -52,7 +52,7 @@ const cars = [
 
 export default function Gallery() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24" id="services">
       <div className="container">
         <div className="grid gap-6 md:grid-cols-2 mb-10">
           {cards.map((card) => (

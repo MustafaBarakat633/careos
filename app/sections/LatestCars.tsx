@@ -47,7 +47,7 @@ const cars = [
 
 export default function LatestCars() {
   return (
-    <section className="py-24 bg-[#E9E9E9]">
+    <section className="py-24 bg-[#E9E9E9]" id="cars">
       <div className="container">
         <h2 className="uppercase font-bold text-2xl md:text-4xl mb-5">
           Our latest cars
